@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hover Cards - Anime Edition</title>
+    <style>
+      body {
+        /* background-color: rgb(52, 74, 95); */
+        background-color: rgb(0, 0, 0);
+      }
+      .container {
+        width: 90%;
+        height: fit-content;
+        /* border: 2px solid black; */
+        margin: 60px auto;
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+        /* color: white; */
+      }
+      .child {
+        height: 270px;
+        /* border: 2px solid red; */
+        border-radius: 10px;
+        flex: 200px;
+        overflow: auto;
+        scrollbar-width: none;
+        /* box-sizing: border-box; */
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .text {
+        /* color: white; */
+        margin: 0;
+        padding: 10px;
+        font-size: 16px;
+        line-height: 1.4;
+        text-align: justify;
+        opacity: 0;
+        transition-delay: 0.1s;
+        transition-duration: 2s;
+        transition-timing-function: ease-out;
+        /* background-color: red; */
+      }
+      .text h3 {
+        padding: 5px;
+        border-radius: 15px;
+        width: fit-content;
+      }
+
+      .child:hover > img {
+        display: none;
+      }
+      .child:hover > .text {
+        opacity: 1;
+      }
+      .img-1 {
+        object-position: top center;
+      }
+      .child-1 > .text {
+        background-color: white;
+        color: darkslategray;
+      }
+      .child-1 > .text h3 {
+        background-color: darkslategray;
+        color: white;
+      }
+      .child-2 > .text {
+        background-color: white;
+        color: rgb(125, 125, 248);
+      }
+      .child-2 > .text h3 {
+        background-color: rgb(125, 125, 248);
+        color: white;
+      }
+      .child-3 > .text {
+        background-color: white;
+        color: palevioletred;
+      }
+      .child-3 > .text h3 {
+        background-color: palevioletred;
+        color: white;
+      }
+      .child-4 > .text {
+        background-color: white;
+        color: red;
+      }
+      .child-4 > .text h3 {
+        background-color: red;
+        color: white;
+      }
+      .child-5 > .text {
+        background-color: white;
+        color: purple;
+      }
+      .child-5 > .text h3 {
+        background-color: purple;
+        color: white;
+      }
+      .child-6 > .text {
+        background-color: white;
+        color: darkolivegreen;
+      }
+      .child-6 > .text h3 {
+        background-color: darkolivegreen;
+        color: white;
+      }
+      .child-7 > .text {
+        background-color: white;
+        color: rgb(31, 61, 31);
+      }
+      .child-7 > .text h3 {
+        background-color: rgb(31, 61, 31);
+        color: white;
+      }
+      .child-8 > .text {
+        background-color: white;
+        color: grey;
+      }
+      .child-8 > .text h3 {
+        background-color: grey;
+        color: white;
+      }
+      .child-9 > .text {
+        background-color: white;
+        color: black;
+      }
+      .child-9 > .text h3 {
+        background-color: black;
+        color: white;
+      }
+      .child-10 > .text {
+        background-color: white;
+        color: black;
+      }
+      .child-10 > .text h3 {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="container">
+      <div class="child child-1">
+        <img class="img-1" src="./Hashiras.webp" alt="" />
+        <div class="text">
+          <h3>THE Hashiras</h3>
+          <p>
+            The Hashira are the elite warriors of the Demon Slayer Corps, each
+            mastering a unique Breathing Style. The
+            <strong>
+              Water, Love, Stone, Sound, Mist, Serpent, Wind, Insect, and Flame
+              Hashira
+            </strong>
+            protect humanity from powerful demons with skill and courage. Facing
+            immense danger, they uphold honor and guide fellow slayers.
+            Together, these masters of their Breathing Styles form the backbone
+            of the Corps, inspiring resilience, strategy, and strength in the
+            fight against darkness.
+          </p>
+        </div>
+      </div>
+
+      <div class="child child-2">
+        <img class="img-2" src="./giyu.jpg" alt="" />
+        <div class="text">
+          <h3>Tomioka Giyu</h3>
+          <p>
+            <strong>Water Hashira: Giyu Tomioka</strong> wields the Water
+            Breathing techniques. As the Water Hashira, his sword bears the
+            inscription "Akki Messatsu" (惡鬼滅殺), meaning<strong>
+              "Destroy Evil Demons"</strong
+            >
+            symbolizing his commitment to eradicating demons.
+          </p>
+        </div>
+      </div>
+
+      <div class="child child-3">
+        <img class="img-3" src="./Mitsuri-Kanroji-1.webp" alt="" />
+        <div class="text">
+          <h3>Mitsuri Kanroji</h3>
+          <p>
+            <strong>Love Hashira: Mitsuri Kanroji</strong> employs the Love
+            Breathing techniques. As the Love Hashira, her sword bears the
+            inscription "Akki Messatsu" (惡鬼滅殺), meaning<strong>
+              "Destroy Evil Demons"</strong
+            >
+            symbolizing her dedication to protecting humanity from demons.
+          </p>
+        </div>
+      </div>
+      <div class="child child-4">
+        <img class="img-4" src="./himejima.jpeg" alt="" />
+        <div class="text">
+          <h3>Gyomei Himejima</h3>
+          <p>
+            <strong>Stone Hashira: Gyomei Himejima</strong> masters the Stone
+            Breathing techniques. As the Stone Hashira, his sword bears the
+            inscription "Akki Messatsu" (惡鬼滅殺), meaning<strong>
+              "Destroy Evil Demons"</strong
+            >
+            symbolizing his vow to annihilate demons.
+          </p>
+        </div>
+      </div>
+      <div class="child child-5">
+        <img class="img-5" src="./tengen.webp" alt="" />
+        <div class="text">
+          <h3>Tengen Uzui</h3>
+          <p>
+            <strong>Sound Hashira: Tengen Uzui</strong> utilizes the Sound
+            Breathing techniques. As the Sound Hashira, his sword bears the
+            inscription "Akki Messatsu" (惡鬼滅殺), meaning<strong>
+              "Destroy Evil Demons"</strong
+            >
+            symbolizing his mission to eradicate demons.
+          </p>
+        </div>
+      </div>
+      <div class="child child-6">
+        <img class="img-6" src="./tokito.jpeg" alt="" />
+        <div class="text">
+          <h3>Muichiro Tokito</h3>
+          <p>
+            <strong>Mist Hashira: Muichiro Tokito</strong> practices the Mist
+            Breathing techniques. As the Mist Hashira, his sword bears the
+            inscription "Akki Messatsu" (惡鬼滅殺), meaning<strong>
+              "Destroy Evil Demons"</strong
+            >
+            symbolizing his pledge to eliminate demons.
+          </p>
+        </div>
+      </div>
+      <div class="child child-7">
+        <img class="img-7" src="./obanai.webp" alt="" />
+        <div class="text">
+          <h3>Obanai Iguro</h3>
+          <p>
+            <strong>Serpent Hashira: Obanai Iguro</strong> wields the Serpent
+            Breathing techniques. As the Serpent Hashira, his sword bears the
+            inscription "Akki Messatsu" (惡鬼滅殺), meaning<strong>
+              "Destroy Evil Demons"</strong
+            >
+            symbolizing his resolve to vanquish demons.
+          </p>
+        </div>
+      </div>
+      <div class="child child-8">
+        <img class="img-8" src="./sanemi.jpg" alt="" />
+        <div class="text">
+          <h3>Sanemi Shinazugawa</h3>
+          <p>
+            <strong>Wind Hashira: Sanemi Shinazugawa</strong> employs the Wind
+            Breathing techniques. As the Wind Hashira, his sword bears the
+            inscription "Akki Messatsu" (惡鬼滅殺), meaning<strong>
+              "Destroy Evil Demons"</strong
+            >
+            symbolizing his commitment to destroying demons.
+          </p>
+        </div>
+      </div>
+      <div class="child child-9">
+        <img class="img-9" src="./shinobu.jpg" alt="" />
+        <div class="text">
+          <h3>Shinobu - DEAD&nbsp;🥀</h3>
+
+          <p>
+            <strong>Insect Hashira: Shinobu Kocho</strong> employs the Insect
+            Breathing techniques. As the Insect Hashira, her sword bears the
+            inscription "Akki Messatsu" (惡鬼滅殺), meaning<strong>
+              "Destroy Evil Demons"</strong
+            >
+            symbolizing her dedication to eradicating demons.
+          </p>
+        </div>
+      </div>
+      <div class="child child-10">
+        <img class="img-10" src="./rengoku2.jpg" alt="" />
+        <div class="text">
+          <h3>Rengoku - DEAD&nbsp;🥀</h3>
+          <p>
+            <strong>Flame Hashira: Kyojuro Rengoku</strong> masters the Flame
+            Breathing techniques. As the Flame Hashira, his sword bears the
+            inscription "Akki Messatsu" (惡鬼滅殺), meaning<strong>
+              "Destroy Evil Demons"</strong
+            >
+            symbolizing his unwavering commitment to eliminating demons.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
